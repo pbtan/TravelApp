@@ -7,4 +7,52 @@
 
     <!-- TODO implement the UI here... -->
 
+    <EditText
+        android:id="@+id/editTextTemp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:hint="Enter temperature here"/>
+
+
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <RadioButton
+            android:id="@+id/Fahrenheit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="to Fahrenheit" />
+
+        <RadioButton
+            android:id="@+id/Celsius"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="to Celsius" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/CONVERT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CONVERT" />
+
+    <Button
+        android:id="@+id/CLEAR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CLEAR" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+         />
+
 </LinearLayout>

@@ -5,6 +5,62 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <TextView
+        android:id="@+id/Currency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Currency" />
+
+    <EditText
+        android:id="@+id/editTextCurrency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        />
+
+    <TextView
+        android:id="@+id/Rate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rate" />
+    <EditText
+        android:id="@+id/editTextRate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        />
+
+    <TextView
+        android:id="@+id/Dollars"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Singapore Dollars" />
+
+    <EditText
+        android:id="@+id/editTextSingDollar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        />
+
+
+
+
+    <Button
+        android:id="@+id/CONVERT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CONVERT" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        />
+
     <!-- TODO implement the UI here... -->
 
 </LinearLayout>

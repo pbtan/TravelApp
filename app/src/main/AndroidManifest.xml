@@ -14,11 +14,17 @@
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
+        <activity android:name=".CurrencyConverterActivity"
+                  android:label="Currency Converter"></activity>
+        <activity android:name=".EmailActivity"
+                  android:label="Send Email"></activity>
+        <activity android:name=".TempConverterActivity"
+                  android:label="Temperature Converter"></activity>
+
+
 
         <!-- TODO need to do some declarations here -->
 

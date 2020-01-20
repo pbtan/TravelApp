@@ -1,6 +1,9 @@
 package edu.singaporetech.travelapp
 
 import android.os.Bundle
+import android.widget.Button
+import android.widget.EditText
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
 /**
@@ -14,10 +17,26 @@ class CurrencyConverterActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_currency_converter)
 
-        // TODO findviewbyid for the UI elements
 
-        // TODO set onClickListeners to all the buttons here
-        //  or declare the onClick method within the layout XML?
+        //EditText control
+        val currencyText : EditText = findViewById(R.id.editTextCurrency) as EditText
+        val rateText : EditText = findViewById(R.id.editTextRate) as EditText
+        val sgdText : EditText = findViewById(R.id.editTextSingDollar) as EditText
+
+
+        //TextView control
+        val result : TextView = findViewById(R.id.result) as TextView
+
+
+        //CONVERT BUTTON
+        val btn_convert = findViewById(R.id.CONVERT) as Button
+        // set on-click listener
+        btn_convert.setOnClickListener {
+            val sgdText1: Float = sgdText.text.toString().toFloat()
+            val rateText1: Float = rateText.text.toString().toFloat()
+            val returnValue: Float = calculateRate(value = sgdText1, exchangeRate = rateText1)
+            result.setText(sgdText.text.toString() + " SGD is " + returnValue.toString() + " " + currencyText.text.toString())
+        }
 
     }
 
@@ -30,7 +49,8 @@ class CurrencyConverterActivity : AppCompatActivity() {
     private fun calculateRate(value: Float, exchangeRate: Float): Float {
 
         // TODO What's the formula you need?
-        return 0.0F
+        val value: Float = value * exchangeRate
+        return value
     }
 
 }
